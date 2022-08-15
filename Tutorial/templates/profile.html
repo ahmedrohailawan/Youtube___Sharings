@@ -1,0 +1,22 @@
+{% extends 'navbar.html' %}
+{% block title %}User profile{% endblock title %}
+{% block body %}
+{% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-light" role = "alert">
+      {{message}}
+    </div>
+    {% endfor %}
+{% endif %}
+<div class="py-5 text-center">
+  <img class="d-block mx-auto mb-4" src=" {{user.avatar.url}} " alt="" width="72" height="72">
+  <h3> {{user.name}} </h3>
+  <p> @ {{user.username}} </p>
+  <p>
+    <a href="/edit_profile" class="btn btn-primary my-2">Edit Profile</a>
+    <a href="/change_password" class="btn btn-primary my-2">Change Password</a>
+  </p>
+  <p class="lead">{{user.bio}} </p>
+</div>
+{% endblock body %}
+
