@@ -1,0 +1,26 @@
+body{
+    background: #4a98f7;
+}
+#text{
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    height: 40%;
+    border: 2px solid black;
+    position:fixed;
+    top: 25%;
+    left: 25%;
+}
+#speak{
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid black;
+    position:fixed;
+    top: 61%;
+    left: 61%;
+}
+#speak:hover{
+    background-color: #fff;
+}
